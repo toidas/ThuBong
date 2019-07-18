@@ -1,45 +1,29 @@
 {
-  "devFiles": [],
+  "devFiles": [
+    "static/development/dll/dll_2011977376de5c4d4cfb.js"
+  ],
   "pages": {
     "/": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.5b9e36cb2afc7a7cc435.js",
-      "static/runtime/main-50a3cc69fbc016d00f83.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/_app": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.5b9e36cb2afc7a7cc435.js",
-      "static/runtime/main-50a3cc69fbc016d00f83.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/_error": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.5b9e36cb2afc7a7cc435.js",
-      "static/runtime/main-50a3cc69fbc016d00f83.js"
-    ],
-    "/about": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.5b9e36cb2afc7a7cc435.js",
-      "static/runtime/main-50a3cc69fbc016d00f83.js"
-    ],
-    "/bill": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.5b9e36cb2afc7a7cc435.js",
-      "static/runtime/main-50a3cc69fbc016d00f83.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/index": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.5b9e36cb2afc7a7cc435.js",
-      "static/runtime/main-50a3cc69fbc016d00f83.js"
-    ],
-    "/post": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.5b9e36cb2afc7a7cc435.js",
-      "static/runtime/main-50a3cc69fbc016d00f83.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/product": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.5b9e36cb2afc7a7cc435.js",
-      "static/runtime/main-50a3cc69fbc016d00f83.js"
+      "static/runtime/webpack.js",
+      "static/css/styles.chunk.css",
+      "static/chunks/styles.js",
+      "static/runtime/main.js"
     ]
   }
 }

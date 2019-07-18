@@ -1,4 +1,13 @@
 import BillService from '../service/BillService.js';
+import ProductService from '../service/ProductService.js';
+
+const inputStyleCorrect = {
+    background: "white"
+}
+
+const inputStyleInCorrect = {
+    background: "red"
+}
 
 export default class AddBillPopup extends React.Component {
 
@@ -9,18 +18,61 @@ export default class AddBillPopup extends React.Component {
             name: "",
             products: [],
             amount: "",
-            price: ""
+            price: "",
+            showMenu: false,
+            indexShowDropDown: -1,
+            items: [],
+            customerName: "",
+            customerPhone: ""
         };
     }
 
+    componentWillMount() {
+        let billProduct = []
+        if(this.props.item == null){
+            return;
+        }
+        if(this.props.item.billProduct != null){
+            this.props.item.billProduct.map((item) => {
+                let eItem = {
+                    idProduct: item.product.id,
+                    nameProduct: item.product.name,
+                    amount: item.amount
+                }
+                billProduct.push(eItem);
+            })
+        }
+        if(this.props.item != null){
+            this.setState({
+                id: this.props.item.id,
+                name: this.props.item.name,
+                price: this.props.item.price,
+                customerName: this.props.item.customerName,
+                customerPhone: this.props.item.customerPhone,
+                products : billProduct
+            })
+        }
+    }
+
+    async getProduct(name) {
+        const json = await ProductService.getProductByName(name,this.props.token);
+        //console.log(json.content);
+        this.setState({ items: json.content });
+    }
 
 
     checkNumber(number) {
+        if (number == null) {
+            return false;
+        }
         let isnum = /^\d+$/.test(number);
         return isnum;
     }
 
     checkString = text => {
+        if (text == null) {
+            return false;
+        }
         if (text.trim() === "") {
             return false;
         }
@@ -29,36 +81,80 @@ export default class AddBillPopup extends React.Component {
 
     submitProduct = () => {
 
-        if (!this.checkString(this.state.name) || !this.checkString(this.state.price) || !this.checkString(this.state.amount)) {
+        let productList = [];
+        this.state.products.map((item) => {
+            if (item.idProduct == null) {
+                alert('cần chọn sản phẩm đúng');
+                return;
+            }
+
+            if (!this.checkString(item.amount + "")) {
+                alert('cần điền đầy đủ số lượng mỗi loại của sản phẩm');
+                return;
+            }
+
+            if (!this.checkNumber(item.amount)) {
+                alert('số lượng cần là chữ số');
+                return;
+            }
+
+            let cItem = {
+                "amount": item.amount,
+                "id": item.idProduct
+            }
+
+            productList.push(cItem);
+        })
+
+        //console.log(productList);
+
+        if (!this.checkString(this.state.name) || !this.checkString(this.state.price+"")) {
             alert('cần điền đầy đủ các trường');
             return;
         }
 
-        if (!this.checkNumber(this.state.price) || !this.checkNumber(this.state.amount)) {
-            alert('giá và số lượng cần là chữ số');
+        if (!this.checkNumber(this.state.price)) {
+            alert('giá cần là chữ số');
             return;
         }
-
-        let data = {
-            "amount": this.state.amount,
-            "image": this.state.image,
-            "name": this.state.name,
-            "price": this.state.price
+        let data = null;
+        if(this.state.id == null || this.state.id == ""){
+            data = {
+                "name": this.state.name,
+                "price": this.state.price,
+                "listProduct": productList,
+                "customerName": this.state.customerName,
+                "customerPhone": this.state.customerPhone,
+                "type": this.props.kind
+            }
+        }else{
+            data = {
+                "name": this.state.name,
+                "price": this.state.price,
+                "listProduct": productList,
+                "customerName": this.state.customerName,
+                "customerPhone": this.state.customerPhone,
+                "type": this.props.kind,
+                "id": this.state.id
+            }
         }
+
+        console.log(data);
 
         this.setState({
             id: "",
             name: "",
-            image: "",
-            amount: "",
-            price: ""
+            price: "",
+            customerPhone: "",
+            customerName: "",
+            products: []
         })
-        // ProductService.updateProduct(data).then(function (result) {
-        //     alert('thêm sản phẩm thành công');
-        //     console.log(result);
-        // }).catch(function (error) {
-        //     alert('thêm sản phẩm bị lỗi');
-        // })
+        BillService.updateBill(data,this.props.token).then(function (result) {
+            alert('update hóa đơn thành công');
+            console.log(result);
+        }).catch(function (error) {
+            alert('update hóa đơn bị lỗi');
+        })
     }
 
     onChange = (event) => {
@@ -67,16 +163,16 @@ export default class AddBillPopup extends React.Component {
 
     onChangeProduct = (event) => {
         //console.log(event.target.name)
-        let productList = this.state.products; 
+        let productList = this.state.products;
         productList[event.target.name].amount = event.target.value;
         this.setState({
-            products : productList
+            products: productList
         })
     }
 
     addProduct = () => {
         let product = {
-            idProduct : '',
+            idProduct: null,
             nameProduct: '',
             amount: 0
         }
@@ -84,48 +180,115 @@ export default class AddBillPopup extends React.Component {
         let productList = this.state.products;
         productList.push(product);
         this.setState({
-            products : productList
+            products: productList
         })
     }
 
     deleteProduct = () => {
         //console.log(event.target.name)
-        let productList = this.state.products; 
+        let productList = this.state.products;
         productList.splice(event.target.name, 1);
         this.setState({
-            products : productList
+            products: productList
+        })
+    }
+
+    showMenu = (event, index) => {
+        let productList = this.state.products;
+        productList[index].nameProduct = event.target.value;
+        productList[index].idProduct = null;
+        this.setState({
+            products: productList,
+        })
+        this.getProduct(event.target.value);
+    }
+
+    onMouseEnterHandler = (event, index) => {
+        event.preventDefault();
+        this.getProduct(this.state.products[index].nameProduct);
+        this.setState({
+            showMenu: true,
+            indexShowDropDown: index
+        });
+    }
+
+    onMouseLeaveHandler = (event) => {
+        event.preventDefault();
+
+        this.setState({
+            showMenu: false
+        });
+    }
+
+    choiceItem = (event, eItem, index) => {
+        //console.log(this.state.items);
+        let productList = this.state.products;
+        productList[index].nameProduct = eItem.name;
+        productList[index].idProduct = eItem.id;
+        //console.log(eItem.id);
+        this.setState({
+            products: productList,
+            showMenu: false
         })
     }
 
     render() {
         return (
             <div>
-                <h2>Thêm Hóa Đơn</h2>
+                <h2>Update Hóa Đơn</h2>
                 <table>
-                    <tr>
-                        <td>
-                            ID:
+                    <tbody>
+                        <tr>
+                            <td>
+                                Type:
                     </td>
-                        <td>
-                            <input type="text" name="id" value={this.state.id} onChange={this.onChange} />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Tên Hóa Đơn:
+                            <td>
+                                <input type="text" name="name" value={this.props.kind} onChange={this.onChange} disabled/>
+                            </td>
+                        </tr>
+                        {this.state.id === "" ? null : (
+                        <tr>
+                            <td>
+                                ID:
                     </td>
-                        <td>
-                            <input type="text" name="name" value={this.state.name} onChange={this.onChange} />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Giá:
+                            <td>
+                                <input type="text" name="id" value={this.state.id} onChange={this.onChange} disabled/>
+                            </td>
+                        </tr>
+                        )}
+                        <tr>
+                            <td>
+                                Tên Hóa Đơn:
                     </td>
-                        <td>
-                            <input type="text" name="price" value={this.state.price} onChange={this.onChange} />
-                        </td>
-                    </tr>
+                            <td>
+                                <input type="text" name="name" value={this.state.name} onChange={this.onChange} />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Tên Khách Hàng:
+                    </td>
+                            <td>
+                                <input type="text" name="customerName" value={this.state.customerName} onChange={this.onChange} />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                SDT Khách Hàng:
+                    </td>
+                            <td>
+                                <input type="text" name="customerPhone" value={this.state.customerPhone} onChange={this.onChange} />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Giá:
+                    </td>
+                            <td>
+                                <input type="text" name="price" value={this.state.price} onChange={this.onChange} />
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
 
                 <table border="1">
@@ -134,23 +297,52 @@ export default class AddBillPopup extends React.Component {
                             <td>Tên SP</td>
                             <td>Số lượng</td>
                         </tr>
-                        {this.state.products.map((eItem, key) =>
+                        {this.state.products.map((eItem, keyProduct) =>
                             <tr>
-                                <td>Tên SP</td>
-                                <td>
-                                    <input type="text" name={key} value={this.state.products[key].amount} onChange={this.onChangeProduct} />
+                                <td onMouseEnter={(evt) => this.onMouseEnterHandler(evt, keyProduct)} onMouseLeave={this.onMouseLeaveHandler}>
+                                    <input style={this.state.products[keyProduct].idProduct != null ? inputStyleCorrect : inputStyleInCorrect} type="text" onChange={(evt) => this.showMenu(evt, keyProduct)} value={this.state.products[keyProduct].nameProduct} >
+                                    </input>
+                                    {
+                                        this.state.showMenu && keyProduct == this.state.indexShowDropDown
+                                            ? (
+                                                <div className="menu">
+                                                    <style jsx>{`
+                                                        .menu {
+                                                            background: #FFFFFF;
+                                                            position: absolute;
+                                                            z-index: 1;
+                                                            width: 30%;
+                                                        },
+                                                        .item {
+                                                            width: 100%;
+                                                        }
+                                                    `}</style>
+                                                    {this.state.items.map((eItem, keyItem) =>
+                                                        <div className="item" onClick={(evt) => this.choiceItem(evt, eItem, keyProduct)}>
+                                                            <span>{eItem.name}</span>
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            )
+                                            : (
+                                                null
+                                            )
+                                    }
                                 </td>
                                 <td>
-                                    <button type="button" name={key} onClick={this.deleteProduct}>Xóa</button>
+                                    <input type="text" name={keyProduct} value={this.state.products[keyProduct].amount} onChange={this.onChangeProduct} />
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-warning" name={keyProduct} onClick={this.deleteProduct}>Xóa</button>
                                 </td>
                             </tr>
                         )}
                     </tbody>
                 </table>
 
-                <button type="button" onClick={this.addProduct}>Thêm Sản Phẩm</button>
+                <button style={{marginTop:"10px"}} type="button" class="btn btn-primary" onClick={this.addProduct}>Thêm Sản Phẩm</button>
                 <br></br>
-                <button type="button" onClick={this.submitProduct}>Submit</button>
+                <button style={{marginTop:"10px"}} type="button" class="btn btn-primary" onClick={this.submitProduct}>Submit</button>
             </div >
         );
     }
