@@ -63,8 +63,8 @@ export default class Login extends React.Component {
           return;
         }
         jsCookie.set('token', result.value.accessToken);
-        console.log(result.value.accessToken);
-        alert('login thành công');
+        //console.log(result.value.accessToken);
+        //alert('login thành công');
         Router.push('/product');
         //console.log(result);
       }).catch(function (error) {
