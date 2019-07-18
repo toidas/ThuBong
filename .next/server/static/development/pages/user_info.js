@@ -88,31 +88,46 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/AddProductPopup.js":
+/***/ "./components/ChangePassPopup.js":
 /*!***************************************!*\
-  !*** ./components/AddProductPopup.js ***!
+  !*** ./components/ChangePassPopup.js ***!
   \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AddProductPopup; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _service_ProductService_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../service/ProductService.js */ "./service/ProductService.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ChangePassPopup; });
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _service_UserService_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../service/UserService.js */ "./service/UserService.js");
+/* harmony import */ var _config_Environment_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../config/Environment.js */ "./config/Environment.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! js-cookie */ "js-cookie");
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var reactjs_popup__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! reactjs-popup */ "reactjs-popup");
+/* harmony import */ var reactjs_popup__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(reactjs_popup__WEBPACK_IMPORTED_MODULE_17__);
 
 
 
@@ -120,23 +135,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "D:\\project\\nextJS\\ThuBong\\components\\AddProductPopup.js";
+
+
+var _jsxFileName = "D:\\project\\nextJS\\ThuBong\\components\\ChangePassPopup.js";
 
 
 
-var AddProductPopup =
+
+
+
+
+
+
+var passwordDiv = {
+  marginTop: "10px"
+};
+var formDiv = {
+  marginLeft: "50px"
+};
+var inputCss = {
+  marginLeft: "10px"
+};
+
+var ChangePassPopup =
 /*#__PURE__*/
 function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(AddProductPopup, _React$Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(ChangePassPopup, _React$Component);
 
-  function AddProductPopup(props) {
+  function ChangePassPopup(props) {
     var _this;
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, AddProductPopup);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, ChangePassPopup);
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(AddProductPopup).call(this, props));
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(ChangePassPopup).call(this, props));
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "checkString", function (text) {
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "checkString", function (text) {
       if (text.trim() === "") {
         return false;
       }
@@ -144,268 +177,241 @@ function (_React$Component) {
       return true;
     });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "submitProduct", function () {
-      if (!_this.checkString(_this.state.name) || !_this.checkString(_this.state.price + "") || !_this.checkString(_this.state.amount + "")) {
-        alert('cần điền đầy đủ các trường');
-        return;
-      }
-
-      if (!_this.checkNumber(_this.state.price) || !_this.checkNumber(_this.state.amount)) {
-        alert('giá và số lượng cần là chữ số');
-        return;
-      }
-
-      var data = null;
-
-      if (_this.state.id == null || _this.state.id == "") {
-        data = {
-          "amount": _this.state.amount,
-          "image": _this.state.image,
-          "name": _this.state.name,
-          "price": _this.state.price
-        };
-      } else {
-        data = {
-          "amount": _this.state.amount,
-          "image": _this.state.image,
-          "name": _this.state.name,
-          "price": _this.state.price,
-          "id": _this.state.id
-        };
-      }
-
-      _this.setState({
-        id: "",
-        name: "",
-        image: "",
-        amount: "",
-        price: ""
-      });
-
-      _service_ProductService_js__WEBPACK_IMPORTED_MODULE_8__["default"].updateProduct(data, _this.props.token).then(function (result) {
-        alert('update sản phẩm thành công');
-        console.log(result);
-      }).catch(function (error) {
-        alert('update sản phẩm bị lỗi');
-      });
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "onChange", function (event) {
-      _this.setState(Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])({}, event.target.name, event.target.value));
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "onChange", function (event) {
+      _this.setState(Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])({}, event.target.name, event.target.value));
     });
 
     _this.state = {
-      id: "",
-      name: "",
-      image: "",
-      amount: "",
-      price: ""
+      currentPassword: "",
+      newPassword: "",
+      confirmNewPassword: ""
     };
     return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(AddProductPopup, [{
-    key: "componentWillMount",
-    value: function componentWillMount() {
-      if (this.props.item != null) {
-        this.setState({
-          id: this.props.item.id,
-          name: this.props.item.name,
-          image: this.props.item.image,
-          amount: this.props.item.amount,
-          price: this.props.item.price
-        });
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(ChangePassPopup, [{
+    key: "changePassword",
+    value: function () {
+      var _changePassword = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+      /*#__PURE__*/
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var currentPassword, newPassword, confirmNewPassword, data, json;
+        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                currentPassword = this.state.currentPassword;
+                newPassword = this.state.newPassword;
+                confirmNewPassword = this.state.confirmNewPassword;
+
+                if (!(newPassword.length < 4)) {
+                  _context.next = 6;
+                  break;
+                }
+
+                alert("Password cần lớn hơn 4 ký tự");
+                return _context.abrupt("return");
+
+              case 6:
+                if (!(newPassword !== confirmNewPassword)) {
+                  _context.next = 9;
+                  break;
+                }
+
+                alert("new password và confim phải giống nhau");
+                return _context.abrupt("return");
+
+              case 9:
+                data = {
+                  "newPassword": newPassword,
+                  "oldPassword": currentPassword
+                };
+                _context.next = 12;
+                return _service_UserService_js__WEBPACK_IMPORTED_MODULE_12__["default"].changePass(data, this.props.token);
+
+              case 12:
+                json = _context.sent;
+
+                if (json.code == 200) {
+                  alert("thay đổi mật khẩu thành công");
+                  this.setState({
+                    currentPassword: "",
+                    newPassword: "",
+                    confirmNewPassword: ""
+                  });
+                } else {
+                  alert("mật khẩu cũ không đúng");
+                }
+
+              case 14:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function changePassword() {
+        return _changePassword.apply(this, arguments);
       }
-    }
-  }, {
-    key: "checkNumber",
-    value: function checkNumber(number) {
-      var isnum = /^\d+$/.test(number);
-      return isnum;
-    }
+
+      return changePassword;
+    }()
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+      return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+        style: formDiv,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 78
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_16___default.a, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 79
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("title", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 80
+        },
+        __self: this
+      }, "Thay \u0111\u1ED5i Password"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("link", {
+        rel: "stylesheet",
+        href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",
+        integrity: "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T",
+        crossorigin: "anonymous",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 81
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("script", {
+        src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+        integrity: "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo",
+        crossorigin: "anonymous",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 82
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("script", {
+        src: "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+        integrity: "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1",
+        crossorigin: "anonymous",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 83
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("script", {
+        src: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js",
+        integrity: "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM",
+        crossorigin: "anonymous",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 84
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 86
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h1", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 87
+        },
+        __self: this
+      }, "Thay \u0111\u1ED5i Password"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("form", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 88
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+        class: "form-group",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 89
+        },
+        __self: this
+      }, "Current Password :", react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("input", {
+        style: inputCss,
+        type: "text",
+        name: "currentPassword",
+        value: this.state.currentPassword,
+        onChange: this.onChange,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 91
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 92
-        },
-        __self: this
-      }, "Update S\u1EA3n Ph\u1EA9m"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("table", {
+      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+        style: passwordDiv,
+        class: "form-group",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 93
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("tbody", {
+      }, "New Password :", react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("input", {
+        style: inputCss,
+        type: "text",
+        name: "newPassword",
+        value: this.state.newPassword,
+        onChange: this.onChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 95
         },
         __self: this
-      }, this.state.id === "" ? null : react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("tr", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 96
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("td", {
+      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+        style: passwordDiv,
+        class: "form-group",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 97
         },
         __self: this
-      }, "ID:"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("td", {
+      }, "Confirm New Password:", react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("input", {
+        style: inputCss,
+        type: "text",
+        name: "confirmNewPassword",
+        value: this.state.confirmNewPassword,
+        onChange: this.onChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 99
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
-        type: "text",
-        name: "id",
-        value: this.state.id,
-        onChange: this.onChange,
-        disabled: true,
+      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+        style: passwordDiv,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 101
         },
         __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("tr", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 105
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("td", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 106
-        },
-        __self: this
-      }, "T\xEAn SP:"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("td", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 109
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
-        type: "text",
-        name: "name",
-        value: this.state.name,
-        onChange: this.onChange,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 110
-        },
-        __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("tr", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 113
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("td", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 114
-        },
-        __self: this
-      }, "\u1EA2nh:"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("td", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 117
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
-        type: "text",
-        name: "image",
-        value: this.state.image,
-        onChange: this.onChange,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 118
-        },
-        __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("tr", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 121
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("td", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 122
-        },
-        __self: this
-      }, "S\u1ED1 l\u01B0\u1EE3ng:"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("td", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 125
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
-        type: "text",
-        name: "amount",
-        value: this.state.amount,
-        onChange: this.onChange,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 126
-        },
-        __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("tr", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 129
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("td", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 130
-        },
-        __self: this
-      }, "Gi\xE1:"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("td", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 133
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
-        type: "text",
-        name: "price",
-        value: this.state.price,
-        onChange: this.onChange,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 134
-        },
-        __self: this
-      }))))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("button", {
         type: "button",
         class: "btn btn-primary",
-        onClick: this.submitProduct,
+        onClick: this.changePassword.bind(this),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 139
+          lineNumber: 102
         },
         __self: this
-      }, "Submit"));
+      }, "Submit"))));
     }
   }]);
 
-  return AddProductPopup;
-}(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
+  return ChangePassPopup;
+}(react__WEBPACK_IMPORTED_MODULE_9___default.a.Component);
 
 
 
@@ -663,238 +669,6 @@ function Layout(props) {
     __self: this
   }, props.children));
 }
-
-/***/ }),
-
-/***/ "./components/ProductRow.js":
-/*!**********************************!*\
-  !*** ./components/ProductRow.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProductRow; });
-/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
-/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _service_ProductService_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../service/ProductService.js */ "./service/ProductService.js");
-/* harmony import */ var _components_AddProductPopup_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/AddProductPopup.js */ "./components/AddProductPopup.js");
-/* harmony import */ var reactjs_popup__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! reactjs-popup */ "reactjs-popup");
-/* harmony import */ var reactjs_popup__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(reactjs_popup__WEBPACK_IMPORTED_MODULE_12__);
-
-
-
-
-
-
-
-
-
-var _jsxFileName = "D:\\project\\nextJS\\ThuBong\\components\\ProductRow.js";
-
-
-
-
-var imgStyle = {
-  width: "100px",
-  height: "70px"
-};
-
-var ProductRow =
-/*#__PURE__*/
-function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(ProductRow, _React$Component);
-
-  function ProductRow(props) {
-    var _this;
-
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, ProductRow);
-
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(ProductRow).call(this, props));
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "openModal", function () {
-      _this.setState({
-        item: _this.props.item,
-        open: true
-      });
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "closeModal", function () {
-      _this.props.refreshDataMethod();
-
-      _this.setState({
-        open: false
-      });
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "deleteProduct", function (id) {
-      if (window.confirm('bạn có chắc muốn xóa sản phẩm này')) {
-        _this.deleteProductAsync.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this))(id);
-      } else {
-        console.log("No");
-      }
-    });
-
-    _this.state = {
-      open: false,
-      item: null
-    };
-    return _this;
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(ProductRow, [{
-    key: "deleteProductAsync",
-    value: function () {
-      var _deleteProductAsync = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
-      /*#__PURE__*/
-      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(id) {
-        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return _service_ProductService_js__WEBPACK_IMPORTED_MODULE_10__["default"].deleteProduct(id, this.props.token);
-
-              case 2:
-                this.props.refreshDataMethod();
-
-              case 3:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function deleteProductAsync(_x) {
-        return _deleteProductAsync.apply(this, arguments);
-      }
-
-      return deleteProductAsync;
-    }()
-  }, {
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("tr", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 45
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("th", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 46
-        },
-        __self: this
-      }, this.props.item.id), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("th", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 49
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-        style: imgStyle,
-        src: this.props.item.image,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 50
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("th", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 52
-        },
-        __self: this
-      }, this.props.item.name), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("th", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55
-        },
-        __self: this
-      }, this.props.item.amount), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("th", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 58
-        },
-        __self: this
-      }, this.props.item.price), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("th", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 61
-        },
-        __self: this
-      }, this.props.item.createBy != null ? this.props.item.createBy.name : ""), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("th", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 64
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("button", {
-        type: "button",
-        class: "btn btn-warning",
-        onClick: this.openModal,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 65
-        },
-        __self: this
-      }, "S\u1EEDa")), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("th", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 67
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("button", {
-        type: "button",
-        class: "btn btn-warning",
-        onClick: function onClick() {
-          return _this2.deleteProduct(_this2.props.item.id);
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 68
-        },
-        __self: this
-      }, "X\xF3a")), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(reactjs_popup__WEBPACK_IMPORTED_MODULE_12___default.a, {
-        open: this.state.open,
-        closeOnDocumentClick: true,
-        onClose: this.closeModal,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 70
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_AddProductPopup_js__WEBPACK_IMPORTED_MODULE_11__["default"], {
-        token: this.props.token,
-        item: this.state.item,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 75
-        },
-        __self: this
-      })));
-    }
-  }]);
-
-  return ProductRow;
-}(react__WEBPACK_IMPORTED_MODULE_9___default.a.Component);
-
-
 
 /***/ }),
 
@@ -1792,27 +1566,16 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./node_modules/react-pagination-library/build/css/index.css":
-/*!*******************************************************************!*\
-  !*** ./node_modules/react-pagination-library/build/css/index.css ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "./pages/product.js":
-/*!**************************!*\
-  !*** ./pages/product.js ***!
-  \**************************/
+/***/ "./pages/user_info.js":
+/*!****************************!*\
+  !*** ./pages/user_info.js ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Product; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return UserInfo; });
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
@@ -1826,21 +1589,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
-/* harmony import */ var _components_ProductRow_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/ProductRow.js */ "./components/ProductRow.js");
-/* harmony import */ var reactjs_popup__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! reactjs-popup */ "reactjs-popup");
-/* harmony import */ var reactjs_popup__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(reactjs_popup__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _components_AddProductPopup_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/AddProductPopup.js */ "./components/AddProductPopup.js");
-/* harmony import */ var _service_ProductService_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../service/ProductService.js */ "./service/ProductService.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! next/router */ "next/router");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! js-cookie */ "js-cookie");
-/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var react_pagination_library__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! react-pagination-library */ "react-pagination-library");
-/* harmony import */ var react_pagination_library__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(react_pagination_library__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var react_pagination_library_build_css_index_css__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! react-pagination-library/build/css/index.css */ "./node_modules/react-pagination-library/build/css/index.css");
-/* harmony import */ var react_pagination_library_build_css_index_css__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(react_pagination_library_build_css_index_css__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _service_UserService_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../service/UserService.js */ "./service/UserService.js");
+/* harmony import */ var _config_Environment_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../config/Environment.js */ "./config/Environment.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! js-cookie */ "js-cookie");
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var reactjs_popup__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! reactjs-popup */ "reactjs-popup");
+/* harmony import */ var reactjs_popup__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(reactjs_popup__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _components_ChangePassPopup_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/ChangePassPopup.js */ "./components/ChangePassPopup.js");
 
 
 
@@ -1850,7 +1611,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "D:\\project\\nextJS\\ThuBong\\pages\\product.js";
+var _jsxFileName = "D:\\project\\nextJS\\ThuBong\\pages\\user_info.js";
 
 
 
@@ -1861,142 +1622,99 @@ var _jsxFileName = "D:\\project\\nextJS\\ThuBong\\pages\\product.js";
 
 
 
-
-var tableStyle = {
-  margin: "0 auto",
-  border: '1px solid #DDD'
+var passwordDiv = {
+  marginTop: "10px"
 };
-var tableDivStyle = {
-  padding: 20,
-  textAlign: "center",
-  border: '1px solid #DDD'
+var formDiv = {
+  marginLeft: "50px"
+};
+var inputCss = {
+  marginLeft: "10px"
 };
 
-var Product =
+var UserInfo =
 /*#__PURE__*/
 function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(Product, _React$Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(UserInfo, _React$Component);
 
-  function Product(props) {
+  function UserInfo(props) {
     var _this;
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Product);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, UserInfo);
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Product).call(this, props));
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(UserInfo).call(this, props));
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "refreshData", function () {
-      _this.getProduct(_this.state.currentPage);
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "checkString", function (text) {
+      if (text.trim() === "") {
+        return false;
+      }
+
+      return true;
     });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "changeCurrentPage", function (numPage) {
-      _this.changeCurrentPageAsync.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this))(numPage);
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "onChange", function (event) {
+      _this.setState(Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])({}, event.target.name, event.target.value));
     });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "changePass", function () {});
 
     _this.state = {
-      products: [],
-      open: false,
-      item: null,
-      token: "",
-      pageSize: 5,
-      currentPage: 1,
-      totalPages: 1
+      username: "",
+      name: "",
+      email: "",
+      phoneNumber: ""
     };
     _this.openModal = _this.openModal.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
     _this.closeModal = _this.closeModal.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
     return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Product, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(UserInfo, [{
     key: "openModal",
     value: function openModal() {
       this.setState({
-        item: null,
         open: true
       });
     }
   }, {
     key: "closeModal",
     value: function closeModal() {
-      this.getProduct(this.state.currentPage);
       this.setState({
         open: false
       });
     }
   }, {
-    key: "getProduct",
-    value: function () {
-      var _getProduct = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
-      /*#__PURE__*/
-      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(pageNum) {
-        var json;
-        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return _service_ProductService_js__WEBPACK_IMPORTED_MODULE_14__["default"].getProduct(this.state.token, pageNum, this.state.pageSize);
-
-              case 2:
-                json = _context.sent;
-
-                if (json.content != null) {
-                  this.setState({
-                    products: json.content
-                  });
-                }
-
-                if (pageNum == 1) {
-                  this.setState({
-                    totalPages: json.totalPages
-                  });
-                }
-
-              case 5:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function getProduct(_x) {
-        return _getProduct.apply(this, arguments);
-      }
-
-      return getProduct;
-    }()
-  }, {
     key: "componentWillMount",
     value: function () {
       var _componentWillMount = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
       /*#__PURE__*/
-      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
         var tokenLogin;
-        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
-            switch (_context2.prev = _context2.next) {
+            switch (_context.prev = _context.next) {
               case 0:
-                tokenLogin = js_cookie__WEBPACK_IMPORTED_MODULE_17___default.a.get('token');
+                tokenLogin = js_cookie__WEBPACK_IMPORTED_MODULE_15___default.a.get('token');
 
                 if (tokenLogin === "") {
-                  next_router__WEBPACK_IMPORTED_MODULE_16___default.a.push('/');
+                  next_router__WEBPACK_IMPORTED_MODULE_14___default.a.push('/');
                 }
 
-                _context2.next = 4;
+                _context.next = 4;
                 return this.setState({
                   token: tokenLogin
                 });
 
               case 4:
-                _context2.next = 6;
-                return this.getProduct(this.state.currentPage);
+                _context.next = 6;
+                return this.getUser();
 
               case 6:
               case "end":
-                return _context2.stop();
+                return _context.stop();
             }
           }
-        }, _callee2, this);
+        }, _callee, this);
       }));
 
       function componentWillMount() {
@@ -2006,24 +1724,81 @@ function (_React$Component) {
       return componentWillMount;
     }()
   }, {
-    key: "changeCurrentPageAsync",
+    key: "getUser",
     value: function () {
-      var _changeCurrentPageAsync = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+      var _getUser = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
       /*#__PURE__*/
-      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3(numPage) {
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
+        var json;
+        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                _context2.next = 2;
+                return _service_UserService_js__WEBPACK_IMPORTED_MODULE_12__["default"].getUser(this.state.token);
+
+              case 2:
+                json = _context2.sent;
+
+                if (!(json.value != null)) {
+                  _context2.next = 6;
+                  break;
+                }
+
+                _context2.next = 6;
+                return this.setState({
+                  username: json.value.username,
+                  name: json.value.name,
+                  email: json.value.email,
+                  phoneNumber: json.value.phoneNumber
+                });
+
+              case 6:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2, this);
+      }));
+
+      function getUser() {
+        return _getUser.apply(this, arguments);
+      }
+
+      return getUser;
+    }()
+  }, {
+    key: "editUser",
+    value: function () {
+      var _editUser = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+      /*#__PURE__*/
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3() {
+        var data, json;
         return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
           while (1) {
             switch (_context3.prev = _context3.next) {
               case 0:
-                _context3.next = 2;
-                return this.setState({
-                  currentPage: numPage
-                });
-
-              case 2:
-                this.getProduct(this.state.currentPage);
+                data = {
+                  name: this.state.name,
+                  email: this.state.email,
+                  phoneNumber: this.state.phoneNumber
+                };
+                _context3.next = 3;
+                return _service_UserService_js__WEBPACK_IMPORTED_MODULE_12__["default"].editUser(data, this.state.token);
 
               case 3:
+                json = _context3.sent;
+
+                if (json.code == 200) {
+                  alert("thay đổi thông tin cá nhân thành công");
+                } else {
+                  alert("lỗi thay đổi thông tin cá nhân");
+                }
+
+                _context3.next = 7;
+                return this.getUser();
+
+              case 7:
               case "end":
                 return _context3.stop();
             }
@@ -2031,167 +1806,236 @@ function (_React$Component) {
         }, _callee3, this);
       }));
 
-      function changeCurrentPageAsync(_x2) {
-        return _changeCurrentPageAsync.apply(this, arguments);
+      function editUser() {
+        return _editUser.apply(this, arguments);
       }
 
-      return changeCurrentPageAsync;
+      return editUser;
     }()
   }, {
     key: "render",
     value: function render() {
-      var _this2 = this;
-
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 99
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h1", {
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+        style: formDiv,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 100
         },
         __self: this
-      }, "S\u1EA3n Ph\u1EA9m"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        style: tableDivStyle,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 88
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("table", {
-        border: "1",
-        style: tableStyle,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 89
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("tbody", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 90
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("tr", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 91
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("th", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 92
-        },
-        __self: this
-      }, "STT"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("th", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 95
-        },
-        __self: this
-      }, "\u1EA2nh"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("th", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 98
-        },
-        __self: this
-      }, "T\xEAn"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("th", {
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_16___default.a, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 101
         },
         __self: this
-      }, "S\u1ED1 l\u01B0\u1EE3ng"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("th", {
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("title", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 102
+        },
+        __self: this
+      }, "Andy Mum"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("link", {
+        rel: "stylesheet",
+        href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",
+        integrity: "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T",
+        crossorigin: "anonymous",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 103
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("script", {
+        src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+        integrity: "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo",
+        crossorigin: "anonymous",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 104
         },
         __self: this
-      }, "Gi\xE1(K VND)"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("th", {
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("script", {
+        src: "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+        integrity: "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1",
+        crossorigin: "anonymous",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107
+          lineNumber: 105
         },
         __self: this
-      }, "Ng\u01B0\u1EDDi t\u1EA1o")), this.state.products.map(function (eItem, key) {
-        return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_ProductRow_js__WEBPACK_IMPORTED_MODULE_11__["default"], {
-          key: key,
-          token: _this2.state.token,
-          refreshDataMethod: _this2.refreshData,
-          item: eItem,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 112
-          },
-          __self: this
-        });
-      }))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("script", {
+        src: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js",
+        integrity: "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM",
+        crossorigin: "anonymous",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 116
+          lineNumber: 106
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_pagination_library__WEBPACK_IMPORTED_MODULE_18___default.a, {
-        currentPage: this.state.currentPage,
-        totalPages: this.state.totalPages,
-        changeCurrentPage: this.changeCurrentPage,
-        theme: "bottom-border",
+      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 108
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h1", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 109
+        },
+        __self: this
+      }, "Th\xF4ng tin c\xE1 nh\xE2n"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("form", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 110
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+        class: "form-group",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 111
+        },
+        __self: this
+      }, "Username :", react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("input", {
+        style: inputCss,
+        type: "text",
+        name: "username",
+        value: this.state.username,
+        onChange: this.onChange,
+        disabled: true,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 113
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+        style: passwordDiv,
+        class: "form-group",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 115
+        },
+        __self: this
+      }, "Name :", react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("input", {
+        style: inputCss,
+        type: "text",
+        name: "name",
+        value: this.state.name,
+        onChange: this.onChange,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 117
         },
         __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("button", {
-        type: "button",
-        class: "btn btn-primary",
-        onClick: this.openModal,
+      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+        style: passwordDiv,
+        class: "form-group",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 119
+        },
+        __self: this
+      }, "Email :", react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("input", {
+        style: inputCss,
+        type: "text",
+        name: "email",
+        value: this.state.email,
+        onChange: this.onChange,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 121
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+        style: passwordDiv,
+        class: "form-group",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 123
+        },
+        __self: this
+      }, "Phone :", react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("input", {
+        style: inputCss,
+        type: "text",
+        name: "phoneNumber",
+        value: this.state.phoneNumber,
+        onChange: this.onChange,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 125
         },
         __self: this
-      }, "Th\xEAm s\u1EA3n ph\u1EA9m"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(reactjs_popup__WEBPACK_IMPORTED_MODULE_12___default.a, {
-        open: this.state.open,
-        closeOnDocumentClick: true,
-        onClose: this.closeModal,
+      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+        style: passwordDiv,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 127
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("button", {
+        type: "button",
+        class: "btn btn-primary",
+        onClick: this.editUser.bind(this),
         __source: {
           fileName: _jsxFileName,
           lineNumber: 128
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_AddProductPopup_js__WEBPACK_IMPORTED_MODULE_13__["default"], {
-        token: this.state.token,
-        item: this.state.item,
+      }, "Submit"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("button", {
+        style: {
+          marginLeft: '20px'
+        },
+        type: "button",
+        class: "btn btn-primary",
+        onClick: this.openModal,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 129
+        },
+        __self: this
+      }, "Change Pass")))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(reactjs_popup__WEBPACK_IMPORTED_MODULE_17___default.a, {
+        open: this.state.open,
+        closeOnDocumentClick: true,
+        onClose: this.closeModal,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 133
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_ChangePassPopup_js__WEBPACK_IMPORTED_MODULE_18__["default"], {
+        token: this.state.token,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 138
         },
         __self: this
       })));
     }
   }]);
 
-  return Product;
+  return UserInfo;
 }(react__WEBPACK_IMPORTED_MODULE_9___default.a.Component);
 
 
 
 /***/ }),
 
-/***/ "./service/ProductService.js":
-/*!***********************************!*\
-  !*** ./service/ProductService.js ***!
-  \***********************************/
+/***/ "./service/UserService.js":
+/*!********************************!*\
+  !*** ./service/UserService.js ***!
+  \********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProductService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return UserService; });
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
@@ -2210,34 +2054,44 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ProductService =
+var UserService =
 /*#__PURE__*/
 function () {
-  function ProductService() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__["default"])(this, ProductService);
+  function UserService() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__["default"])(this, UserService);
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__["default"])(ProductService, null, [{
-    key: "updateProduct",
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__["default"])(UserService, null, [{
+    key: "login",
     value: function () {
-      var _updateProduct = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
+      var _login = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
       /*#__PURE__*/
-      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(data, token) {
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(data) {
+        var res, result;
         return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                return _context.abrupt("return", isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()(_config_Environment_js__WEBPACK_IMPORTED_MODULE_6__["default"].SERVER + '/api/products/create', {
+                _context.next = 2;
+                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()(_config_Environment_js__WEBPACK_IMPORTED_MODULE_6__["default"].SERVER + '/auth/login', {
                   method: 'POST',
                   headers: {
                     'Accept': 'application/json',
-                    'Content-Type': 'application/json',
-                    'Authorization': 'Bearer ' + token
+                    'Content-Type': 'application/json'
                   },
                   body: _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_1___default()(data)
-                }));
+                });
 
-              case 1:
+              case 2:
+                res = _context.sent;
+                _context.next = 5;
+                return res.json();
+
+              case 5:
+                result = _context.sent;
+                return _context.abrupt("return", result);
+
+              case 7:
               case "end":
                 return _context.stop();
             }
@@ -2245,26 +2099,25 @@ function () {
         }, _callee);
       }));
 
-      function updateProduct(_x, _x2) {
-        return _updateProduct.apply(this, arguments);
+      function login(_x) {
+        return _login.apply(this, arguments);
       }
 
-      return updateProduct;
+      return login;
     }()
   }, {
-    key: "getProduct",
+    key: "getUser",
     value: function () {
-      var _getProduct = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
+      var _getUser = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
       /*#__PURE__*/
-      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(token, pageNum, pageSize) {
-        var res, data;
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(token) {
+        var res, result;
         return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
-                pageNum -= 1;
-                _context2.next = 3;
-                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()(_config_Environment_js__WEBPACK_IMPORTED_MODULE_6__["default"].SERVER + '/api/products/get-product?pageNum=' + pageNum + '&pageSize=' + pageSize, {
+                _context2.next = 2;
+                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()(_config_Environment_js__WEBPACK_IMPORTED_MODULE_6__["default"].SERVER + '/api/users/me', {
                   method: 'GET',
                   headers: {
                     'Accept': 'application/json',
@@ -2273,16 +2126,16 @@ function () {
                   }
                 });
 
-              case 3:
+              case 2:
                 res = _context2.sent;
-                _context2.next = 6;
+                _context2.next = 5;
                 return res.json();
 
-              case 6:
-                data = _context2.sent;
-                return _context2.abrupt("return", data);
+              case 5:
+                result = _context2.sent;
+                return _context2.abrupt("return", result);
 
-              case 8:
+              case 7:
               case "end":
                 return _context2.stop();
             }
@@ -2290,31 +2143,32 @@ function () {
         }, _callee2);
       }));
 
-      function getProduct(_x3, _x4, _x5) {
-        return _getProduct.apply(this, arguments);
+      function getUser(_x2) {
+        return _getUser.apply(this, arguments);
       }
 
-      return getProduct;
+      return getUser;
     }()
   }, {
-    key: "deleteProduct",
+    key: "editUser",
     value: function () {
-      var _deleteProduct = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
+      var _editUser = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
       /*#__PURE__*/
-      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3(idProduct, token) {
-        var res, data;
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3(data, token) {
+        var res, result;
         return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
           while (1) {
             switch (_context3.prev = _context3.next) {
               case 0:
                 _context3.next = 2;
-                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()(_config_Environment_js__WEBPACK_IMPORTED_MODULE_6__["default"].SERVER + '/api/products/delete/' + idProduct, {
-                  method: 'DELETE',
+                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()(_config_Environment_js__WEBPACK_IMPORTED_MODULE_6__["default"].SERVER + '/api/users/edit-user', {
+                  method: 'PUT',
                   headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json',
                     'Authorization': 'Bearer ' + token
-                  }
+                  },
+                  body: _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_1___default()(data)
                 });
 
               case 2:
@@ -2323,8 +2177,8 @@ function () {
                 return res.json();
 
               case 5:
-                data = _context3.sent;
-                return _context3.abrupt("return", data);
+                result = _context3.sent;
+                return _context3.abrupt("return", result);
 
               case 7:
               case "end":
@@ -2334,31 +2188,32 @@ function () {
         }, _callee3);
       }));
 
-      function deleteProduct(_x6, _x7) {
-        return _deleteProduct.apply(this, arguments);
+      function editUser(_x3, _x4) {
+        return _editUser.apply(this, arguments);
       }
 
-      return deleteProduct;
+      return editUser;
     }()
   }, {
-    key: "getProductByName",
+    key: "changePass",
     value: function () {
-      var _getProductByName = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
+      var _changePass = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
       /*#__PURE__*/
-      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee4(name, token) {
-        var res, data;
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee4(data, token) {
+        var res, result;
         return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee4$(_context4) {
           while (1) {
             switch (_context4.prev = _context4.next) {
               case 0:
                 _context4.next = 2;
-                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()(_config_Environment_js__WEBPACK_IMPORTED_MODULE_6__["default"].SERVER + '/api/products/get-product?name=' + name, {
-                  method: 'GET',
+                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()(_config_Environment_js__WEBPACK_IMPORTED_MODULE_6__["default"].SERVER + '/api/users/change-pass', {
+                  method: 'PUT',
                   headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json',
                     'Authorization': 'Bearer ' + token
-                  }
+                  },
+                  body: _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_1___default()(data)
                 });
 
               case 2:
@@ -2367,8 +2222,8 @@ function () {
                 return res.json();
 
               case 5:
-                data = _context4.sent;
-                return _context4.abrupt("return", data);
+                result = _context4.sent;
+                return _context4.abrupt("return", result);
 
               case 7:
               case "end":
@@ -2378,29 +2233,29 @@ function () {
         }, _callee4);
       }));
 
-      function getProductByName(_x8, _x9) {
-        return _getProductByName.apply(this, arguments);
+      function changePass(_x5, _x6) {
+        return _changePass.apply(this, arguments);
       }
 
-      return getProductByName;
+      return changePass;
     }()
   }]);
 
-  return ProductService;
+  return UserService;
 }();
 
 
 
 /***/ }),
 
-/***/ 4:
-/*!********************************!*\
-  !*** multi ./pages/product.js ***!
-  \********************************/
+/***/ 5:
+/*!**********************************!*\
+  !*** multi ./pages/user_info.js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\project\nextJS\ThuBong\pages\product.js */"./pages/product.js");
+module.exports = __webpack_require__(/*! D:\project\nextJS\ThuBong\pages\user_info.js */"./pages/user_info.js");
 
 
 /***/ }),
@@ -2581,17 +2436,6 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ "react-pagination-library":
-/*!*******************************************!*\
-  !*** external "react-pagination-library" ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-pagination-library");
-
-/***/ }),
-
 /***/ "reactjs-popup":
 /*!********************************!*\
   !*** external "reactjs-popup" ***!
@@ -2626,4 +2470,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=product.js.map
+//# sourceMappingURL=user_info.js.map

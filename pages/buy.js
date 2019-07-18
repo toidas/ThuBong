@@ -130,7 +130,7 @@ export default class Bill extends React.Component {
                         />
                     </div>
                 </div>
-                <button className="button" class="btn btn-primary" onClick={this.openModal}>
+                <button type="button" class="btn btn-primary" onClick={this.openModal}>
                     Thêm Bill
                 </button>
                 <Popup

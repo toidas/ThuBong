@@ -36,7 +36,7 @@ export default class Header extends React.Component {
         <Link href="/user_info">
           <a style={linkStyle}>User_Info</a>
         </Link>
-        <button className="button" class="btn btn-danger" onClick={this.logout}>
+        <button type="button" class="btn btn-danger" onClick={this.logout}>
           Logout
       </button>
       </div>
