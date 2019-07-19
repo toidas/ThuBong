@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Router from 'next/router'
 import jsCookie from 'js-cookie';
 import Head from 'next/head';
+import "react-pagination-library/build/css/index.css";
 
 const linkStyle = {
   marginRight: 15

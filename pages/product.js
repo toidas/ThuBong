@@ -7,7 +7,7 @@ import fetch from 'isomorphic-unfetch'
 import Router from 'next/router'
 import jsCookie from 'js-cookie';
 import Pagination from "react-pagination-library";
-import "react-pagination-library/build/css/index.css";
+
 
 const tableStyle = {
     margin: "0 auto",

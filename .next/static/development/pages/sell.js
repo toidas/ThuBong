@@ -983,6 +983,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! next/head */ "./node_modules/next-server/dist/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var react_pagination_library_build_css_index_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-pagination-library/build/css/index.css */ "./node_modules/react-pagination-library/build/css/index.css");
+/* harmony import */ var react_pagination_library_build_css_index_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react_pagination_library_build_css_index_css__WEBPACK_IMPORTED_MODULE_12__);
 
 
 
@@ -991,6 +993,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "D:\\project\\nextJS\\ThuBong\\components\\Header.js";
+
 
 
 
@@ -1032,19 +1035,19 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 20
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_11___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 21
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("title", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 22
         },
         __self: this
       }, "Andy Mum"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("link", {
@@ -1054,7 +1057,7 @@ function (_React$Component) {
         crossorigin: "anonymous",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 23
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("script", {
@@ -1063,7 +1066,7 @@ function (_React$Component) {
         crossorigin: "anonymous",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 24
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("script", {
@@ -1072,7 +1075,7 @@ function (_React$Component) {
         crossorigin: "anonymous",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 25
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("script", {
@@ -1081,63 +1084,63 @@ function (_React$Component) {
         crossorigin: "anonymous",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 26
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
         href: "/product",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 28
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
         style: linkStyle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 29
         },
         __self: this
       }, "Product")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
         href: "/sell",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 31
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
         style: linkStyle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 32
         },
         __self: this
       }, "Sell_Bill")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
         href: "/buy",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 34
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
         style: linkStyle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 35
         },
         __self: this
       }, "Buy_Bill")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
         href: "/user_info",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 37
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
         style: linkStyle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 38
         },
         __self: this
       }, "User_Info")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
@@ -1146,7 +1149,7 @@ function (_React$Component) {
         onClick: this.logout,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 40
         },
         __self: this
       }, "Logout"));
@@ -13693,8 +13696,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_17__);
 /* harmony import */ var react_pagination_library__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! react-pagination-library */ "./node_modules/react-pagination-library/build/index.js");
 /* harmony import */ var react_pagination_library__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(react_pagination_library__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var react_pagination_library_build_css_index_css__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! react-pagination-library/build/css/index.css */ "./node_modules/react-pagination-library/build/css/index.css");
-/* harmony import */ var react_pagination_library_build_css_index_css__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(react_pagination_library_build_css_index_css__WEBPACK_IMPORTED_MODULE_19__);
 
 
 
@@ -13714,7 +13715,7 @@ var _jsxFileName = "D:\\project\\nextJS\\ThuBong\\pages\\sell.js";
 
 
 
-
+ //import "react-pagination-library/build/css/index.css";
 
 var tableStyle = {
   margin: "0 auto",
@@ -13794,9 +13795,13 @@ function (_React$Component) {
 
               case 2:
                 json = _context.sent;
-                jsonSumPrice = 0; //const jsonSumPrice = await BillService.getSumPrice(this.state.kind, this.state.token);
-                //console.log(json.content);
+                _context.next = 5;
+                return _service_BillService_js__WEBPACK_IMPORTED_MODULE_14__["default"].getSumPrice(this.state.kind, this.state.token);
 
+              case 5:
+                jsonSumPrice = _context.sent;
+
+                //console.log(json.content);
                 if (json.content != null) {
                   this.setState({
                     bills: json.content,
@@ -13810,7 +13815,7 @@ function (_React$Component) {
                   });
                 }
 
-              case 6:
+              case 8:
               case "end":
                 return _context.stop();
             }
@@ -14210,29 +14215,30 @@ function () {
 
               case 2:
                 res = _context3.sent;
-                data = 9;
-                console.log(res);
-
-                if (!(res != null)) {
-                  _context3.next = 9;
-                  break;
-                }
-
-                _context3.next = 8;
+                data = 0;
+                _context3.prev = 4;
+                _context3.next = 7;
                 return res.json();
 
-              case 8:
+              case 7:
                 data = _context3.sent;
-
-              case 9:
-                return _context3.abrupt("return", data);
+                _context3.next = 13;
+                break;
 
               case 10:
+                _context3.prev = 10;
+                _context3.t0 = _context3["catch"](4);
+                data = 0;
+
+              case 13:
+                return _context3.abrupt("return", data);
+
+              case 14:
               case "end":
                 return _context3.stop();
             }
           }
-        }, _callee3);
+        }, _callee3, null, [[4, 10]]);
       }));
 
       function getSumPrice(_x6, _x7) {

@@ -41,10 +41,12 @@ export default class BillService {
                 'Authorization': 'Bearer '+token
             }
         });
-        let data = 9;
-        console.log(res);
-        if(res != null){
+        let data = 0;
+        try {
             data = await res.json();
+          }
+        catch(err) {
+            data = 0;
         }
         return data;
     }

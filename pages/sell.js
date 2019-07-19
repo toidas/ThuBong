@@ -7,7 +7,7 @@ import fetch from 'isomorphic-unfetch'
 import Router from 'next/router'
 import jsCookie from 'js-cookie';
 import Pagination from "react-pagination-library";
-import "react-pagination-library/build/css/index.css";
+//import "react-pagination-library/build/css/index.css";
 
 const tableStyle = {
     margin: "0 auto",
@@ -52,8 +52,8 @@ export default class Bill extends React.Component {
 
     async getBill(pageNum) {
         const json = await BillService.getBillByType(this.state.kind, this.state.token, pageNum, this.state.pageSize);
-        const jsonSumPrice = 0;
-        //const jsonSumPrice = await BillService.getSumPrice(this.state.kind, this.state.token);
+        //const jsonSumPrice = 0;
+        const jsonSumPrice = await BillService.getSumPrice(this.state.kind, this.state.token);
         //console.log(json.content);
         if (json.content != null) {
             this.setState({ bills: json.content, sumPrice: jsonSumPrice });
